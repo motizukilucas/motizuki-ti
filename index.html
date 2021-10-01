@@ -11,6 +11,7 @@
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!--  typed JS -->
         <link href="css/all.min.css" rel="stylesheet"><!-- font awesome -->
         <link href="css/hamburgers.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -44,7 +45,7 @@
                 </div>
             </nav>
             <div class="hero-text">
-                <h1>Atendimento Técnico</h1>
+                <h1>Atendimento Técnico <span class="typed"></span></h1>
                 <p>
                     Manuteção, reparo e suporte técnico em computadores & notebooks. 
                 </p>
@@ -71,6 +72,21 @@
 
             hamburger.click(function() {
                 hamburger.toggleClass("is-active");
+            });
+
+            // Typed JS
+            $(document).ready(function() {
+                var options = {
+                    strings: ['Confiável.', 'de Qualidade.', 'Acessível.'],
+                    typeSpeed: 100,
+                    startDelay: 2000,
+                    shuffle: true,
+                    loop: true,
+                    loopCount: 3,
+                    backSpeed: 50
+                };
+
+                var typed = new Typed('.typed', options);
             });
         </script>          
     </body>

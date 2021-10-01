@@ -29,9 +29,14 @@ a.navbar-brand:hover {
   left: 50%;
   transform: translate(-50%, -50%); 
 }
+
 .hero-text h1{
   font-family: 'Oswald', sans-serif;
   font-size: 6.4vh;
+}
+
+.typed {
+  color: cyan;
 }
 
 .hero-text p {
