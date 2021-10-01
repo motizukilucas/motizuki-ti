@@ -6,18 +6,21 @@
         <title>Motizuki TI - Suporte Técnico Teresópolis</title>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+        <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/all.min.css" rel="stylesheet"><!-- font awesome -->
+        <link href="css/hamburgers.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- <section id="carouselExampleSlidesOnly" class="hero carousel slide" data-ride="carousel">
+        <section class="carousel slide"  data-bs-ride="carousel">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="#"><i class="fas fa-laptop-medical"></i> Motizuki TI</a>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
                         <ul class="ms-auto navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -33,41 +36,42 @@
                             </li>
                         </ul>
                     </div>
+                    <button class="hamburger hamburger--elastic js-hamburger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
                 </div>
             </nav>
             <div class="hero-text">
-                <h1>Teste</h1>
+                <h1>Atendimento Técnico</h1>
+                <p>
+                    Manuteção, reparo e suporte técnico em computadores & notebooks. 
+                </p>
+                <a href="#">Entre em contato</a>
             </div>
-            <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
-                <div class="carousel-inner h-100">
-                    
-                    <div class="carousel-item active">
-                        <img src="hero1.jpg" class="d-block w-100" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="hero2.jpg" class="d-block w-100" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="hero3.jpg" class="d-block w-100" alt="Third slide">
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section class="carousel slide"  data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active hero-carousel-image hero-1"></div>
                 <div class="carousel-item hero-carousel-image hero-2"></div>
                 <div class="carousel-item hero-carousel-image hero-3"></div>
             </div>
         </section>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-39d5a745-74a2-46fb-9e9d-70612d0ee363"></div>
         <script language="JavaScript" type="text/javascript">
-            // init carousel
+            // init bootstrap carousel
             $(document).ready(function(){
               $('.carousel').carousel({
                 interval: 5000
               })
-            });    
+            });
+            
+            // Hamburger CSS
+            var hamburger = $(".hamburger");
+
+            hamburger.click(function() {
+                hamburger.toggleClass("is-active");
+            });
         </script>          
     </body>
 </html>
