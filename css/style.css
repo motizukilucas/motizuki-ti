@@ -18,6 +18,7 @@ a.navbar-brand:hover {
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link {
   color: white;
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .hero-text {
@@ -33,6 +34,7 @@ a.navbar-brand:hover {
 .hero-text h1{
   font-family: 'Oswald', sans-serif;
   font-size: 6.4vh;
+  font-weight: 500;
 }
 
 .typed {
@@ -42,10 +44,12 @@ a.navbar-brand:hover {
 .hero-text p {
   font-family: 'Roboto', sans-serif;
   padding: 0.9vh 0px 4.3vh;
+  font-weight: 700;
 }
 
 .hero-text a {
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: white;
   border: 1px solid white;
