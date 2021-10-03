@@ -3,6 +3,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.navbar {
+  background-color: rgba(0,0,0,0.3);
+}
+
 a.nav-link:hover {
   color: white !important;
   text-decoration: cyan underline 2px wavy;
