@@ -19,6 +19,7 @@ a.navbar-brand:hover {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  mix-blend-mode: difference;
 }
 
 .hero-text {
@@ -101,4 +102,20 @@ a.navbar-brand:hover {
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before {
   background-color: white;
+}
+
+.feature-icon {
+  font-size: 4.8vh;
+}
+
+.feature-number {
+  margin-bottom: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 6.7vh;
+  font-weight: 500;
+}
+
+.feature-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
