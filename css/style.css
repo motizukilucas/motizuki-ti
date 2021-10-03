@@ -108,6 +108,23 @@ a.navbar-brand:hover {
   background-color: white;
 }
 
+.feedback-h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 6.7vh;
+  font-weight: 500;
+}
+
+.feedback-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.feature {
+  /* background-color: rgba(0,255,255,0.7); */
+  background-color: #304D63;
+  color: white;
+}
+
 .feature-icon {
   font-size: 4.8vh;
 }
