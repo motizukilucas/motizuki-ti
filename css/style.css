@@ -119,6 +119,26 @@ a.navbar-brand:hover {
   font-weight: 700;
 }
 
+.client-image {
+  max-width: 200px;
+  border-radius: 50%
+}
+
+.client-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.client-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+.fa-star {
+  color: #ED8975;
+}
+
 .feature {
   /* background-color: rgba(0,255,255,0.7); */
   background-color: #304D63;
