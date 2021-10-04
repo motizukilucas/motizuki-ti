@@ -76,15 +76,15 @@ a.navbar-brand:hover {
 }
 
 .hero-1 {
-  background-image: url(../hero1.jpg);
+  background-image: url(../img/hero1.jpg);
 }
 
 .hero-2 {
-  background-image: url(../hero2.jpg);
+  background-image: url(../img/hero2.jpg);
 }
 
 .hero-3 {
-  background-image: url(../hero3.jpg);
+  background-image: url(../img/hero3.jpg);
 }
 
 .carousel-item:after {
