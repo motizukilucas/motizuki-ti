@@ -135,7 +135,7 @@ a.navbar-brand:hover {
   font-weight: 500;
 }
 
-.fa-star {
+.fa-star, .fa-phone, .fa-envelope {
   color: #ED8975;
 }
 
@@ -159,4 +159,24 @@ a.navbar-brand:hover {
 .feature-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3vh;
+}
+
+@media only screen and (max-width: 321px)  {
+  .contact {
+    font-size: 5vh;
+  }
 }

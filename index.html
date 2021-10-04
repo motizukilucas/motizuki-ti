@@ -66,11 +66,7 @@
                         <div class="col-12 col-md-6">
                             <p class="client-text">“Renan possui uma ótima comunicação, cumpriu todos os prazos e suas habilidades foram excepcionais. Em um ponto o serviço exigiu um esforço adicional e ele foi muito cooperativo, alocou recursos adicionais para apoiar o trabalho. Gostei de trabalhar com ele e já o recrutei para serviços adicionais.”</p>
                             <h2 class="client-name">Luis Sepúlveda Filho</h2>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                     </div>
                 </div>
@@ -82,11 +78,7 @@
                         <div class="col-12 col-md-6">
                             <p class="client-text">“Renan é experiente e extremamente inteligente na área de TI. Nunca precisei me preocupar, sempre forneceu atualizações regularmente. Ele fez um ótimo trabalho, além de garantir que o serviço fosse intacto e que o trabalho fosse concluído de forma satisfatória!”</p>
                             <h2 class="client-name">Júlia Gama</h2>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                         </div>
                     </div>
                 </div>
@@ -113,6 +105,19 @@
                 </div>
             </div>
         </section>
+        <section class="mt-5 container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div id="map"></div>
+                </div>
+                <div class="contact col-12 col-md-4">
+                    <div class="mb-5 mt-5"><i class="fas fa-phone"></i> (22) 99800-6009</div>
+                    <br>
+                    <div><i class="fas fa-envelope"></i> motizuki@gmail.com</div>
+                </div>
+            </div>
+        </section>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdEpLETglWQ0Z2-ShgeB9MtkwCafN2tCo&callback=initMap&libraries=&v=weekly" async></script>  
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-39d5a745-74a2-46fb-9e9d-70612d0ee363"></div>
         <script language="JavaScript" type="text/javascript">
@@ -143,6 +148,19 @@
                 };
 
                 var typed = new Typed('.typed', options);
+            });
+
+            // Google Maps
+            $(document).ready(function(){
+                const uluru = { lat: -22.881057881231193, lng: -42.02650315527545 }; 
+                const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+                });
+                const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                });
             });
         </script>          
     </body>
