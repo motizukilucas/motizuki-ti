@@ -170,12 +170,14 @@ a.navbar-brand:hover {
   font-size: 3vh;
 }
 
-@media only screen and (max-width: 641px)  {
-  .mt-sm-1 {
-    margin-top: 1rem;
-  }
-
+@media only screen and (max-width: 400px)  {
   .contact {
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px)  {
+  .mt-sm-1 {
+    margin-top: 1rem;
   }
 }
