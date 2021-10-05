@@ -111,18 +111,22 @@
         <section class="container mb-5">
             <div class="row">
                 <div class="offset-md-1 col-12 col-sm-6 col-md-4">
-                    <form action="mailto:someone@example.com?subject=MySubject&body=Mymessage" method="post" enctype="text/plain">
-                        <div class="form-group">
+                    <form id="emailForm" action="mailto:someone@example.com?subject=MySubject&body=Mymessage" method="post" enctype="text/plain">
+                        <!-- <div class="form-group">
                             <label for="emailInputNome">Nome</label>
                             <input type="string" class="form-control" id="emailInputNome" placeholder="Digite seu nome">
                         </div>
                         <div class="form-group mt-2">
                             <label for="emailInputEmail">Endereço de email</label>
                             <input type="email" class="form-control" id="emailInputEmail" aria-describedby="emailHelp" placeholder="Digite seu email">
+                        </div> -->
+                        <div class="form-group">
+                            <label for="emailInputAssunto">Assunto</label>
+                            <input type="string" class="form-control" id="emailInputAssunto" placeholder="Digite o assunto">
                         </div>
                         <div class="form-group mt-2">
-                            <label for="emailFormControlTextarea">Conteúdo</label>
-                            <textarea class="form-control" id="emailFormControlTextarea" rows="5"></textarea>
+                            <label for="emailFormConteudo">Conteúdo</label>
+                            <textarea class="form-control" id="emailFormConteudo"></textarea>
                         </div>
                         <button type="submit" class="mt-2 btn btn-primary">Enviar</button>
                     </form>

@@ -52,3 +52,10 @@ $('.count').each(function () {
         }
     });
 });
+
+// Email form
+$('#emailForm').submit(function(){
+    var assunto = $('#emailInputAssunto').val();
+    var conteudo = $('#emailFormConteudo').val();
+    $(this).attr('action', "mailto:someone@example.com?subject="+assunto+"&body="+conteudo);
+});
