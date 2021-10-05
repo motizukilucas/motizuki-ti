@@ -130,7 +130,7 @@ a.navbar-brand:hover {
   font-weight: 500;
 }
 
-.fa-star, .fa-whatsapp, .fa-envelope {
+.fa-star, .fa-whatsapp, .fa-envelope, .fa-home {
   color: #ED8975;
 }
 
@@ -170,8 +170,12 @@ a.navbar-brand:hover {
   font-size: 3vh;
 }
 
-@media only screen and (max-width: 321px)  {
+@media only screen and (max-width: 641px)  {
+  .mt-sm-1 {
+    margin-top: 1rem;
+  }
+
   .contact {
-    font-size: 5vh;
+    margin-top: 2rem;
   }
 }
