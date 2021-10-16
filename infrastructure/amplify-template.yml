@@ -43,24 +43,9 @@ Resources:
   AmplifyApp:
     Type: "AWS::Amplify::App"
     Properties:
-      Name: App
+      Name: MotizukiTI
       Repository: !Ref Repository
       OauthToken: !Ref OauthToken
-      # BuildSpec: |-
-      #   version: 0.1
-      #   frontend:
-      #     phases:
-      #       build:
-      #         commands:
-      #           - cp dist/vue.min.js examples/todomvc/
-      #     artifacts:
-      #       baseDirectory: examples/todomvc/
-      #       files:
-      #         - '*'
-      # CustomRules:
-      #   - Source: /dist/vue.min.js
-      #     Target: /vue.min.js
-      #     Status: '200'
       IAMServiceRole: !GetAtt AmplifyRole.Arn
 
   AmplifyBranch:
@@ -82,6 +67,3 @@ Resources:
 Outputs:
   DefaultDomain:
     Value: !GetAtt AmplifyApp.DefaultDomain
-
-  # MasterBranchUrl:
-  #   Value: !Join [ ".", [ !GetAtt AmplifyBranch.BranchName, !GetAtt AmplifyDomain.DomainName ]]
