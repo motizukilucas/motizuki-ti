@@ -102,7 +102,6 @@
             </div>
         </section>
         <section class="mt-5 container mb-5">
-            <!-- <div id="map"></div> -->
             <div id="Map"></div>
         </section>
         <section id="contato" class="container mb-5">
@@ -131,7 +130,6 @@
         <footer class="text-center mb-5">
             &#169; 2021, Motizuki TI - Feito com <i class="fas fa-heart"></i> por <a target="_blank" href="https://motizuki.me">Lucas Motizuki</a>
         </footer>
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdEpLETglWQ0Z2-ShgeB9MtkwCafN2tCo&callback=initMap&libraries=&v=weekly" async></script>   -->
         <script src="js/main.js" language="JavaScript" type="text/javascript"></script>          
         <script src="js/OpenLayers.js"></script>
         <script>
@@ -142,15 +140,15 @@
             var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
             var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
             var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
-        
+
             map = new OpenLayers.Map("Map");
             var mapnik         = new OpenLayers.Layer.OSM();
             map.addLayer(mapnik);
-        
+
             var markers = new OpenLayers.Layer.Markers( "Markers" );
             map.addLayer(markers);
             markers.addMarker(new OpenLayers.Marker(position));
-        
+
             map.setCenter(position, zoom);
         </script>
     </body>
